@@ -1,14 +1,14 @@
 <template>
-  <div id="nav">
-    <h1>FarmApp</h1>
-    | <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link :to="{ name: 'Crops' }">Crops</router-link> |
-    <router-link :to="{ name: 'Seeder' }">Seeder</router-link> |
-    <router-link :to="{ name: 'PlantedCrops' }">Planted Crops</router-link> |
-    <router-link :to="{ name: 'Overview' }">Overview</router-link> |
+  <div id="app">
+    <div id="nav">
+      <!-- <router-link to="/">Home</router-link> | -->
+      <!-- <router-link to="/about">About</router-link> | -->
+      <router-link to="FarmOverview">Farm Overview</router-link> |
+      <router-link to="OrganiseFarm">Oragnise Farm</router-link> |
+      <router-link to="Seeder">Harvests and Seeder</router-link> |
+    </div>
+    <router-view />
   </div>
-  <router-view/>
 </template>
 
 <style>
